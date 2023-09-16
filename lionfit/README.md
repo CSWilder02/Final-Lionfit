@@ -196,28 +196,59 @@ The `Conceptual Process` is the set of actions, activities and research that was
 speak about planning.
 
 
-![image5](pokemonproject/src/Images/Ideation/concept.png)
-<br>
-<!-- ![image6][image6] -->
-
-### Wireframes
-explain process
-
-![image7](pokemonproject/src/Images/Ideation/wireframes.png)
-
 ### Custom UI
-explain process
+
+Using bootstarp aswell as react coding, I created a dark cutom ui that will suit the idea behind a dark gym, which allows users to look at the products of the website.
 
 
-![image8](pokemonproject/src/Images/Ideation/process.png)
 
 <!-- DEVELOPMENT PROCESS -->
 ## Development Process
 
 The `Development Process` is ....
 
-Explain process
+1. Setup:
 
+We began by setting up our development environment, installing Node.js, npm, and MongoDB.
+A project directory was created, and we initialized a new React application using Create React App.
+
+2. Frontend Development (React and Bootstrap):
+
+The website's user interface (UI) was designed using Bootstrap for a responsive and visually appealing layout.
+React components were built for various parts of the website, including product listings, user registration, and product management.
+Bootstrap components were used for styling, ensuring a consistent and professional look.
+React Router was implemented for seamless navigation between pages.
+User registration and login forms were developed for a user-friendly experience.
+State management was handled using Redux or Context API.
+
+3. Backend Development (Node.js/Express.js):
+
+We established a Node.js server with Express.js to serve as the backend for LionFit.
+MongoDB was chosen as the database for storing product information and user data.
+API endpoints were created to manage user registration, login, and CRUD operations for products.
+Mongoose or a MongoDB driver was used to interact with the database.
+
+4. User Authentication (JWT):
+
+The website implemented user authentication using JWT for secure user login and session management.
+JWT tokens were generated upon successful registration or login and sent to the client.
+Middleware was used to protect routes requiring authentication, ensuring user data security.
+
+5. CRUD Functionality:
+
+API routes and controllers were designed for CRUD operations on products (adding, viewing, editing, deleting).
+Robust validation and error handling were implemented to enhance user experience and data accuracy.
+
+6. Testing:
+
+Comprehensive testing was conducted for both frontend and backend components, utilizing Jest, React Testing Library, and Mocha/Chai for backend testing.
+Various use cases, including authentication and product management, were thoroughly tested.
+
+7. Deployment:
+
+The website was deployed to a chosen hosting platform (e.g., Heroku, AWS, Netlify) to make it accessible to users.
+Sensitive information like database connection strings and JWT secrets were secured using environment variables.
+CORS configuration ensured smooth communication between frontend and backend on different domains.
 
 ### Implementation Process
 <!-- stipulate all of the functionality you included in the project -->
@@ -245,31 +276,23 @@ Explain process
 ### Future Implementation
 <!-- stipulate functionality and improvements that can be implemented in the future. -->
 
-* In future I would like to....
+* In future I would like to focus more on implementing a bit more of ui design that is more flowing and also focusing on fixing my backend mistakes.
 
-<!-- MOCKUPS -->
-## Final Outcome
 
-### Mockups
-
-![image9](pokemonproject/src/Images/mockups/mockup2.png)
-<br>
-![image10](pokemonproject/src/Images/mockups/mockup3.png)
 
 <!-- VIDEO DEMONSTRATION -->
 ### Video Demonstration
 
 To see a run through of the application, click below:
 
-[View Demonstration](pokemonproject/src/Assets/video/demonstration.mp4)
 
 
-See the [open issues](https://github.com/YourName/Pokemon/issues) for a list of proposed features (and known issues).
+
 
 <!-- AUTHORS -->
 ## Authors
 
-* **YourName** - [YourName](https://github.com/YourName)
+* **CS Strijdom** - [YourName](https://github.com/YourName)
 
 <!-- LICENSE -->
 ## License
