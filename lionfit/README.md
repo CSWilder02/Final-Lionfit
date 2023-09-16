@@ -167,22 +167,6 @@ DELETE:
 ### ADMIN
 The Admin page is where the admin users can add their product aswell as see the orders of the clients that has purchased their products and also remove products that they has send out, to keep track of all their products sold
 
-ADMIN:
-![image1](pokemonproject/src/Images/Ideation/intro.png)
-
-ORDERS:
-![image1](pokemonproject/src/Images/Ideation/intro.png)
-
-
-### PRODUCT 
-Tthe Product Page allows
-
-
-### LOGIN 
-About Feature
-
-
-
 
 
 <!-- CONCEPT PROCESS -->
@@ -292,7 +276,7 @@ To see a run through of the application, click below:
 <!-- AUTHORS -->
 ## Authors
 
-* **CS Strijdom** - [YourName](https://github.com/YourName)
+* **CS Strijdom** - [[YourName](https://github.com/YourName)](https://github.com/CSWilder02/Final-Lionfit.git)
 
 <!-- LICENSE -->
 ## License
@@ -302,16 +286,7 @@ Distributed under the MIT License. See `LICENSE` for more information.\
 <!-- LICENSE -->
 ## Contact
 
-* **YourName** - [YourNum@virtualwindow.co.za](mailto:YourNum@virtualwindow.co.za) - [@instagram_handle](https://www.instagram.com/instagram_handle/) 
-* **Project Link** - https://github.com/YourName/Pokemon
+* **YourName** - [YourNum@virtualwindow.co.za](mailto:YourNum@virtualwindow.co.za) 
+* **Project Link** - (https://github.com/CSWilder02/Final-Lionfit.git)
 
-<!-- ACKNOWLEDGEMENTS -->
-## Acknowledgements
-<!-- all resources that you used and Acknowledgements here -->
-<!-- * [Resource Name](path/to/resource)
-* [Resource Name](path/to/resource)
-* [Resource Name](path/to/resource)
-* [Resource Name](path/to/resource)
-* [Resource Name](path/to/resource) -->
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
