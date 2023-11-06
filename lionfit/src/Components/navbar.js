@@ -51,7 +51,7 @@ function BasicNavbar() {
           <img style={{ width: '80px', marginLeft: '20px' }} src={logo} alt="Logo" />
         </Navbar.Brand>
         <Nav className="me-auto">
-          <Nav.Link as={Link} to="/" style={{ color: 'white', marginLeft: '430px', paddingTop: '20px', textDecoration: 'none' }}>
+          <Nav.Link as={Link} to="/" style={{ color: 'white', marginLeft: '200px', paddingTop: '20px', textDecoration: 'none' }}>
             HOME
           </Nav.Link>
           <Nav.Link as={Link} to="/product" style={{ color: 'white', marginLeft: '90px', paddingTop: '20px', textDecoration: 'none' }}>
@@ -63,7 +63,7 @@ function BasicNavbar() {
           <Nav.Link as={Link} to="/login" style={{ color: 'white', marginLeft: '90px', paddingTop: '20px', textDecoration: 'none' }}>
             ADMIN
           </Nav.Link>
-          <Nav.Link as={Link} to="/cart" style={{ color: 'white', marginLeft: '60px', paddingTop: '0px', textDecoration: 'none' }}>
+          <Nav.Link as={Link} to="/cart" style={{ color: 'white', marginLeft: '250px', paddingTop: '0px', textDecoration: 'none' }}>
             <img
               src={cart}
               alt="Time"

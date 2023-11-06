@@ -9,16 +9,14 @@ function Login() {
   const [password, setPassword] = useState('');
   const [token, setToken] = useState('');
   const [name, setName] = useState('');
+  const [registrationError, setRegistrationError] = useState('');
 
-  const toggleForm = () => {
-    setIsSignUpActive((prevState) => !prevState);
-  };
+  
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-    
-      const response = await axios.get('http://localhost:5000/api/login', { email, password });
+      const response = await axios.post('http://localhost:5000/api/login', { email, password });
       const { token } = response.data;
       setToken(token);
       // Store the token in localStorage or a secure cookie
@@ -27,6 +25,10 @@ function Login() {
     } catch (error) {
       console.error('Login error:', error);
     }
+  };
+
+  const toggleForm = () => {
+    setIsSignUpActive((prevState) => !prevState);
   };
 
   const handleSignup = async (e) => {
@@ -41,22 +43,21 @@ function Login() {
           'Content-Type': 'application/json',
         },
       });
-      
+  
       const { token } = response.data;
       setToken(token);
-      // Store the token in localStorage or a secure cookie
-      localStorage.setItem('token', token); // Store token in localStorage (not secure)
-      // You should implement a more secure way to store tokens, such as using HttpOnly cookies
+      localStorage.setItem('token', token);
     } catch (error) {
       console.error('Signup error:', error);
+      // Handle the error, show an error message, or take appropriate action
     }
   };
   
 
+
   return (
     <div
       style={{
-    
         backgroundSize: '100%',
         backgroundColor: 'black',
         position: 'relative',
@@ -64,7 +65,7 @@ function Login() {
       }}
     >
       <div
-        style={{ width: '100%', }}
+        style={{ width: '100%' }}
         className={`container5 ${isSignUpActive ? 'right-panel-active' : ''}`}
         id="container5"
       >
@@ -73,23 +74,23 @@ function Login() {
           <form className="form2" action="#">
             <h1>Create Account</h1>
             <div className="social-container5">
-              <a href="#" className="social">
+              <span className="social">
                 <i className="fab fa-facebook-f"></i>
-              </a>
-              <a href="#" className="social">
+              </span>
+              <span className="social">
                 <i className="fab fa-google-plus-g"></i>
-              </a>
-              <a href="#" className="social">
+              </span>
+              <span className="social">
                 <i className="fab fa-linkedin-in"></i>
-              </a>
+              </span>
             </div>
             <span>or use your email for registration</span>
-            <input 
-             type="text"
-             placeholder="Name"
-             value={name}
-             onChange={(e) => setName(e.target.value)}
-             />
+            <input
+              type="text"
+              placeholder="Name"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+            />
             <input
               type="email"
               placeholder="Email"
@@ -112,15 +113,15 @@ function Login() {
           <form className="form2">
             <h1>Sign in</h1>
             <div className="social-container5">
-              <a href="#" className="social">
+              <span className="social">
                 <i className="fab fa-facebook-f"></i>
-              </a>
-              <a href="#" className="social">
+              </span>
+              <span className="social">
                 <i className="fab fa-google-plus-g"></i>
-              </a>
-              <a href="#" className="social">
+              </span>
+              <span className="social">
                 <i className="fab fa-linkedin-in"></i>
-              </a>
+              </span>
             </div>
             <span>or use your account</span>
             <input
@@ -135,12 +136,12 @@ function Login() {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />
-            <a href="#">Forgot your password?</a>
+            
             <Link to="/form">
-      <button type="button" onClick={handleSubmit} className="SignUp">
-        Sign In
-      </button>
-    </Link>
+              <button type="button" onClick={handleSubmit} className="SignUp">
+                Sign In
+              </button>
+            </Link>
           </form>
         </div>
         <div className="overlay-container5">
@@ -154,7 +155,7 @@ function Login() {
             </div>
             <div className="overlay-panel overlay-right">
               <h1>Hello, Friend!</h1>
-              <p>Enter your personal details and start journey with us</p>
+              <p>Enter your personal details and start a journey with us</p>
               <button className="SignUp ghost" onClick={toggleForm} id="signUp">
                 Sign Up
               </button>
@@ -167,5 +168,3 @@ function Login() {
 }
 
 export default Login;
-
-

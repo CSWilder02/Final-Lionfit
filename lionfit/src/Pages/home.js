@@ -47,7 +47,7 @@ function App() {
 
 
   return (
-    <div className="neon-text-container" style={{ backgroundImage: `url(${Background})`, backgroundSize: '1700px', width: '1481px', height: '3750px', marginTop: '-20px', backgroundRepeat: 'no-repeat', backgroundColor: 'black' }}>
+    <div className="neon-text-container" style={{ backgroundImage: `url(${Background})`, backgroundSize: '1700px', width: '1481px', height: '3760px', marginTop: '-20px', backgroundRepeat: 'no-repeat', backgroundColor: 'black' }}>
       <div>
         <h1 className="neon-text">BE PATIENT</h1>
         <br />
@@ -100,7 +100,7 @@ function App() {
           </div>
 
           <div>
-            <img style={{ width: '1150px', marginTop: '30px', marginLeft: '-100px' }} src={Footer} />
+            <img style={{ width: '1150px', marginTop: '25px', marginLeft: '-100px' }} src={Footer} />
           </div>
 
         </div>
