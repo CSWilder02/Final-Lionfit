@@ -76,13 +76,13 @@
 Lionfit is the embodiment of a vision to facilitate and elevate the fitness journeys of individuals worldwide. Developed with passion, expertise, and a commitment to excellence, our website is your trusted companion on the path to a healthier, fitter, and more empowered you. Welcome to Lionfit.com, where fitness meets its true potential. 
 
 ### Built With
-
-* [React](https://reactjs.org/)
-* [Cards]
-* [Mongodb]
-* [Insomnia]
-* [JavaScript]
-* [Bootstrap]
+* [![React][React.js]][React-url]
+* [![Javeascript][javascript.js]][Javascript-url]
+* [![Mongodb][MongoDB]][MongoDB-url]
+* [![jwt][JWT]][jwt-url]
+* [![bootstrap][Bootstrap]][Bootstrap-url]
+* [![nodemon][Nodemon]][Nodemon-url]
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 <!-- Make sure to add appropriate information about what prerequesite technologies the user would need and also the steps to install your project on their own mashines -->
